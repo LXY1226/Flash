@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>闪存精灵Web</title>
+        <style type="text/css">
+            input {
+                border-color: #66CCFF;
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">
+            
+        	function chk() {
+        		document.getElementById("input").value = document.getElementById("input").value.toUpperCase();
+        		var input = document.getElementById("input").value;
+        		switch(input.substring(0,1)){
+        			case "J":
+        				document.getElementById("a").value = "Intel 英特尔"
+        				break;
+        			case "I":
+        				document.getElementById("a").value = "Intel 英特尔"
+        				break;
+        			case "S":
+        				document.getElementById("a").value = "Spansion (AMD)";
+        				break;
+        			case "":
+        				document.getElementById("a").value = "";
+        				break;
+        		}
+        	}
+        
+        
+        </script>
+    </head>
+    <body style="min-width: 570px;">
+        <center>
+            <h1 style="color: #666666">请在这里输入芯片型号：</h1>
+            <input type="text" id="input" oninput="chk()" style="width: 66%;max-width: 556px;sheight: 20px;font-size: 17px"></input>
+        </center>
+        <hr>
+        <center>
+            <table border="0">
+                <tr>
+                    <td colspan="4">该器件详细信息：</td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">制造厂商：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="a"></input>
+                    </td>
+                    <td style="text-align:right;">产品类别：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="b"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">工作电压：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="c"></input>
+                    </td>
+                    <td style="text-align:right;">工作温度：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="d"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">存储介质类别：</td>
+                    <td colspan="3">
+                        <input type="text" readonly="readonly" id="e" style="width: 99%"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">I/O接口位宽：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="f"></input>
+                    </td>
+                    <td style="text-align:right;">存储密度：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="g"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">损坏区块：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="h"></input>
+                    </td>
+                    <td style="text-align:right;">芯片版本：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="i"></input>
+                    </td>
+                <tr>
+                    <td style="text-align:right;">芯片特征：</td>
+                    <td colspan="3">
+                        <input type="text" readonly="readonly" id="j" style="width: 99%"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">封装类型：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="k"></input>
+                    </td>
+                    <td style="text-align:right;">封装材料：</td>
+                    <td>
+                        <input type="text" readonly="readonly" id="l"></input>
+                    </td>
+                <tr></tr>
+            </table>
+        </center>
+        <hr>
+        <center>
+            <a href="http://bbs.mydigit.cn/">数码之家</a>
+            |WEB By.LXY|原作者<a href="mailto://hit00@126.com">hit00</a>
+        </center>
+    </body>
+</html>
